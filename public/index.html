@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CoffeeHouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2 id="usuario-logado">Visitante</h2>
+    <div id="acoes-usuario" class="acoes-usuario"></div>
+
+    <h1>CoffeeHouse</h1>
+    <img class="logocafe" src="fc876b62777505.5a9b740221756.png" alt="imagem de cafeteria">
+
+    <h2>Pedidos:</h2>
+    <span id="totalPedidos">0</span>
+
+    <h2>Total:</h2>
+    <span>R$ <span id="totalValor">0.00</span></span>
+
+    <h2>Meus Pedidos</h2>
+    <div id="lista-pedidos"></div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <span class="logo">CoffeeHouse</span>
+
+        <div class="redes">
+          <img src="application_15072085.png" alt="Instagram">
+          <img src="twitter_1384017.png" alt="Twitter">
+          <img src="tik-tok_3670299.png" alt="TikTok">
+        </div>
+
+        <span class="copy">Copyright-2024</span>
+      </div>
+    </footer>
+  </aside>
+
+  <main class="content">
+    <nav class="menu">
+      <button onclick="trocarCategoria('cafe')">☕Cafe</button>
+      <button onclick="trocarCategoria('lanches')">🥐Lanches</button>
+      <button onclick="trocarCategoria('sobremesas')">🍰Sobremesas</button>
+    </nav>
+
+    <section id="produtos"></section>
+
+    <div class="paginacao">
+      <button onclick="paginaAnterior()">Anterior</button>
+      <button onclick="irParaPagina(1)" class="ativo">1</button>
+      <button onclick="irParaPagina(2)">2</button>
+      <button onclick="irParaPagina(3)">3</button>
+      <button onclick="proximaPagina()">Proximo</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

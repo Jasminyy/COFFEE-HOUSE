@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - CoffeeHouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <h1>CoffeeHouse</h1>
+    <h2>Criar conta</h2>
+
+    <form id="form-cadastro">
+      <input id="cadastroNome" type="text" placeholder="Nome de usuario" required>
+      <input id="cadastroSenha" type="password" placeholder="Senha" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p id="mensagem-auth" class="mensagem-auth"></p>
+
+    <p class="auth-link">
+      Ja tem conta?
+      <a href="login.html">Entrar</a>
+    </p>
+
+    <p class="auth-link-voltar">
+      <a href="index.html">Voltar para Coffee-house </a>
+    </p>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
